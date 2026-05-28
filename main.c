@@ -19,7 +19,7 @@
 
 bool paused = false;
 
-void fractal_tree(Vector2 start,  float length, float angle, float thickness, size_t current_depth, size_t render_depth) {
+void fractal_tree(Vector2 start, float length, float angle, float thickness, size_t current_depth, size_t render_depth) {
     if (length <= 1) {
         return;
     }
