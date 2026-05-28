@@ -63,7 +63,7 @@ int main() {
 
         animation_interval += GetFrameTime();
 
-        // ensure depth is incremented once per quarter second
+        // ensure depth is incremented once per half second
         if (animation_interval > 0.5f) {
             animation_interval = 0.0f;
 
@@ -78,7 +78,7 @@ int main() {
 
         Vector2 start = { WIDTH / 2, HEIGHT - 50 };
 
-        fractal_tree(start,  LENGTH, 0, THICKNESS, 0, render_depth ); // initial recursive fractal tree call
+        fractal_tree(start, LENGTH, 0, THICKNESS, 0, render_depth); // initial recursive fractal tree call
 
         EndDrawing();
     }
